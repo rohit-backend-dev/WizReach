@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b0f14;
+  overflow-x: hidden;
+}
+
+@keyframes float {
+0%,100% { transform: translateY(0px); }
+50% { transform: translateY(-12px); }
+}
+
+.animate-float{
+animation: float 6s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+.animate-gradient{
+animation: gradientMove 6s ease infinite;
+}
